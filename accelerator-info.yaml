@@ -1,0 +1,46 @@
+id: ce02e81a-4604-4652-b72b-fe1016d5f8ae
+timestamp: 2023-05-03T18:43:05Z
+username: trisberg
+source: TAP-GUI
+accelerator:
+  name: tanzu-java-web-app
+  git:
+    url: https://github.com/vmware-tanzu/application-accelerator-samples.git
+    subPath: tanzu-java-web-app
+    ref:
+      branch: main
+      tag: tap-1.5.1
+    commit: e7b9c3deedd493371addd7281903ecd5f8e1341f
+fragments:
+  - name: java-version
+    git:
+      url: https://github.com/vmware-tanzu/application-accelerator-samples.git
+      subPath: fragments/java-version
+      ref:
+        branch: main
+        tag: tap-1.5.1
+      commit: e7b9c3deedd493371addd7281903ecd5f8e1341f
+  - name: tap-workload
+    git:
+      url: https://github.com/vmware-tanzu/application-accelerator-samples.git
+      subPath: fragments/tap-workload
+      ref:
+        branch: main
+        tag: tap-1.5.1
+      commit: e7b9c3deedd493371addd7281903ecd5f8e1341f
+  - name: build-wrapper-maven
+    git:
+      url: https://github.com/vmware-tanzu/application-accelerator-samples.git
+      subPath: fragments/build-wrapper-maven
+      ref:
+        branch: main
+        tag: tap-1.5.1
+      commit: e7b9c3deedd493371addd7281903ecd5f8e1341f
+options:
+  bsGitBranch: main
+  bsGitRepository: github.com?owner=trisberg&repo=tanzu-java-web-app
+  includeBuildToolWrapper: true
+  javaVersion: 17
+  projectName: tanzu-java-web-app
+  repositoryPrefix: dev.local
+  updateBoot3: true
