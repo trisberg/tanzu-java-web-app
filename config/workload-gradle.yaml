@@ -12,7 +12,7 @@ spec:
     env:
       - name: BP_JVM_VERSION
         value: "17"
-      - name: BP_GRADLE_BUILD_FILE
+      - name: BP_MAVEN_POM_FILE
         value: skip
   params:
   - name: annotations
