@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.0.5</version>
+		<version>3.1.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
@@ -66,8 +66,8 @@
 								<spring.boot.version>${project.parent.version}</spring.boot.version>
 								<encoding.source>${project.build.sourceEncoding}</encoding.source>
 								<encoding.reporting>${project.reporting.outputEncoding}</encoding.reporting>
-								<java.source>${maven.compiler.source}</java.source>
-								<java.target>${maven.compiler.target}</java.target>
+								<java.source>${java.version}</java.source>
+								<java.target>${java.version}</java.target>
 							</additionalProperties>
 						</configuration>
 					</execution>
